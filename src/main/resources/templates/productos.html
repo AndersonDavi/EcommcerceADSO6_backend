@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Lista de Productos</title>
+    </head>
+    <body>
+        <h1>Lista de Productos</h1>
+        <ul>
+            <li th:each="producto : ${productos}">
+                <h2 th:text="${producto.nom_prod}"></h2>
+                <p>Descripción: <span th:text="${producto.desc_prod}"></span> </p>
+                <p>Marca: <span th:text="${producto.marca_prod}"></span> </p>
+                <p>Valor: <span th:text="${producto.val_prod}"></span> </p>
+            </li>
+
+
+        </ul>
+    </body>
+</html>
