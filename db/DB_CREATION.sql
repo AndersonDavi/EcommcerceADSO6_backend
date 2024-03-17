@@ -45,7 +45,8 @@ fec_venta datetime
 )
 Create table PRODUCTOS_VENDIDOS
 (
-id_item int identity(1,1) primary key
+id_item int identity(1,1) primary key,
+id_venta int FOREIGN KEY REFERENCES VENTA(id_venta),
 id_producto int FOREIGN KEY REFERENCES PRODUCTOS(id_producto),
 id_descuento int FOREIGN KEY REFERENCES DESCUENTOS(id_descuento)
 )
