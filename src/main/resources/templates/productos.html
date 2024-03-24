@@ -9,10 +9,10 @@
         <h1>Lista de Productos</h1>
         <ul>
             <li th:each="producto : ${productos}">
-                <h2 th:text="${producto.nom_prod}"></h2>
-                <p>Descripción: <span th:text="${producto.desc_prod}"></span> </p>
-                <p>Marca: <span th:text="${producto.marca_prod}"></span> </p>
-                <p>Valor: <span th:text="${producto.val_prod}"></span> </p>
+                <h2 th:text="${producto.nom_producto}"></h2>
+                <p>Descripción: <span th:text="${producto.desc_producto}"></span> </p>
+                <p>Marca: <span th:text="${producto.marca_producto}"></span> </p>
+                <p>Valor: <span th:text="${producto.val_producto}"></span> </p>
             </li>
         </ul>
     </body>
