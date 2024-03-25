@@ -19,7 +19,8 @@ marca_producto  nvarchar(500),
 modelo_producto  nvarchar(500),
 val_producto  float,
 fec_creado datetime,
-creado_por int
+creado_por int,
+img_url nvarchar(max)
 )
 Create table DESCUENTOS
 (

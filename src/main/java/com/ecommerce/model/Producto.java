@@ -26,11 +26,13 @@ public class Producto {
     private String fec_creado;
     @Column(name = "creado_por")
     private Integer creado_por;
+    @Column(name = "img_url")
+    private String img_url;
 
     public Producto() {
     }
 
-    public Producto(String nom_producto, String desc_producto, String marca_producto, String modelo_producto, float val_producto, String fec_creado, int creado_por) {
+    public Producto(String nom_producto, String desc_producto, String marca_producto, String modelo_producto, float val_producto, String fec_creado, int creado_por, String img_url) {
         this.nom_producto = nom_producto;
         this.desc_producto = desc_producto;
         this.marca_producto = marca_producto;
