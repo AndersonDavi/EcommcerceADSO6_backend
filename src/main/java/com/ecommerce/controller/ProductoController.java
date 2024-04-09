@@ -41,6 +41,17 @@ public class ProductoController {
 
     }
 
+    @GetMapping("/producto/{id}")
+    public ResponseEntity<Producto> getProdcutoByID(@PathVariable("id") int id) {
+        try {
+            Optional<Producto> productoData = repo.findById(id);
+            return new ResponseEntity<>(productoData.get(), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+    }
+
     @PostMapping("productos")
     public ResponseEntity<Producto> createProducto(@RequestBody Producto producto) {
         LocalDateTime fechaActual = LocalDateTime.now();
