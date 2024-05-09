@@ -40,6 +40,7 @@ public class Producto {
         this.val_producto = val_producto;
         this.fec_creado = fec_creado;
         this.creado_por = creado_por;
+        this.img_url = img_url;
     }
 
 }
