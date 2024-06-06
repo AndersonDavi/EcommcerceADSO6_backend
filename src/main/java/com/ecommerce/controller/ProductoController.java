@@ -77,6 +77,7 @@ public class ProductoController {
             _producto.setMarca_producto(producto.getMarca_producto());
             _producto.setModelo_producto(producto.getModelo_producto());
             _producto.setVal_producto(producto.getVal_producto());
+            _producto.setImg_url(producto.getImg_url());
 
             return new ResponseEntity<>(repo.save(_producto), HttpStatus.OK);
         } else {
