@@ -4,4 +4,4 @@
 Ir a la carpeta **/db** para la estructura de las tablas y datos de ejemplo
 
 ## Configurar conexión a base de datos
-Modificar url, usuario y contraseña en **application.properties** para la conexión a base de datos
+Para conectar a base de datos renombre el archivo .env.template a .env, asignando los valores a las varialbes de entorno URL, usuario y contraseña
